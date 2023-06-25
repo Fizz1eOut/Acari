@@ -103,17 +103,17 @@ body {
     padding: 0 15px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     [class*="__container"] {
         max-width: none;
         padding: 0 20px;
     }
 }
 
-@media (max-width: 499.98px) {
+@media (max-width: 499px) {
 
 }
