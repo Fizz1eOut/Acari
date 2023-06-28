@@ -880,5 +880,122 @@
 
 .open .accordion__content {
 	opacity: 1;
-	padding: 20px;
+}
+.open .accordion__control {
+	padding: 10px 0 40px
+}
+/* payment-methods */
+.payment-methods {
+    padding: 0;
+}
+.container {
+}
+.payment-methods__container {
+
+}
+.payment-methods__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 0px 0px 120px 10px;
+}
+.payment-methods__content {
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+}
+.payment-methods__name--section {
+    color: var(--color-white);
+    margin-bottom: 32px;
+}
+
+.payment-methods__title {
+    color: rgba(198, 207, 220, 0.66);
+}
+
+.payment-methods__subtitle {
+    margin-bottom: 24px;
+    color: var(--color-white);
+}
+
+.payment-methods__text {
+    max-width: 387px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+.payment-methods__button {
+}
+.payment-methods__image {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-methods__image img {
+}
+.payment-methods__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 810px;
+    height: 603px;
+    z-index: -1;
+    background-image: url(../img/payment-methods/space\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.payment-methods__image::after {
+    content: '';
+    position: absolute;
+    width: 279px;
+    height: 178px;
+    z-index: 1;
+    background-image: url(../img/payment-methods/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 991px) {
+    .payment-methods__body {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .payment-methods__content {
+        margin-left: 0;
+    }
+
+    .payment-methods__image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 499px) {
+    .payment-methods__image img {
+        max-width: 100%;
+    }
+    .payment-methods__image::before {
+        width: 490px;
+        height: 360px;
+        background-size: cover;
+    }
+    .payment-methods__image::after {
+        max-width: 240px;
+        width: 100%;
+        height: 170px;
+    }
+    .payment-methods__body {
+        padding: 0px 0px 70px 0px;
+    }
+    .payment-methods__content {
+        padding: 0 10px;
+    }
 }
