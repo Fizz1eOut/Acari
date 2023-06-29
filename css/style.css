@@ -675,9 +675,14 @@
 }
 .our-solutions__image {
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 .our-solutions__image img{
     border-radius: 120px;
+}
+.our-solutions__image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .our-solutions__image::before {
     content: '';
@@ -997,5 +1002,238 @@
     }
     .payment-methods__content {
         padding: 0 10px;
+    }
+    .payment-methods__button {
+        width: 100%;
+    }
+}
+
+/* about-us */
+.about-us {
+    padding: 0;
+}
+.about-us__container {
+}
+.about-us__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 120px;
+}
+.about-us__item {
+    flex: 0 1 50%;
+}
+.about-us__content {
+    flex: 0 1 50%;
+}
+.about-us__name--section {
+    color: var(--color-white);
+    margin-bottom: 100px;
+}
+.about-us____image {
+    margin-bottom: 100px;
+}
+.about-us__button {
+}
+.about-us__btn {
+    display: none;
+}
+.about-us__title {
+    color: var(--color-white);
+    margin-bottom: 12px;
+}
+.about-us__text {
+    color: rgba(198, 207, 220, 0.66);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+}
+@media (max-width: 768px) {
+    .about-us__items {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    .about-us__name--section {
+        margin-bottom: 60px;
+    }
+    .about-us____image {
+        margin-bottom: 0px;
+    }
+    .about-us__content {
+        flex: 0 1 100%;
+    }
+    .about-us__button {
+        display: none;
+    }
+    .about-us__btn {
+        display: inline-block;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 499px) {
+    .about-us__btn {
+        width: 100%;
+    }
+    .about-us____image img {
+        max-width: 280px;
+    }
+    .about-us__items {
+        padding-bottom: 70px;
+    }
+    .about-us__text {
+        font-size: 24px;
+    }
+}
+
+/* why-us */
+.why-us {
+}
+.container {
+}
+.why-us__container {
+    position: relative;
+}
+.why-us__container::before {
+    content: '';
+    position: absolute;
+    bottom: 270px;
+    left: 0;
+    width: 93px;
+    height: 93px;
+    background-image: url(../img/why-choose-us/solar-system.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.why-us__container::after {
+    content: '';
+    position: absolute;
+    bottom: 234px;
+    right: 240px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../img/why-choose-us/solar-system-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.why-us__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 120px;
+}
+.why-us__content {
+    max-width: 410px;
+}
+.why-us__title {
+    margin-bottom: 24px;
+    color: var(--color-white);
+}
+.why-us__text {
+    margin-bottom: 40px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.why-us__button {
+}
+.why-us__item {
+}
+
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-choose-us__item {
+
+}
+.why-choose-us__item:not(:last-child) {
+    margin-right: 112px;
+}
+.why-choose-us__content {
+    padding: 20px;
+    max-width: 210px;
+    min-height: 394px;
+    border-radius: 20px;
+    background-color: #0A0E22;
+}
+.why-choose-us__content:hover {
+    cursor: pointer;
+    background-color: #040320;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.why-choose-us__content:not(:last-child) {
+    margin-bottom: 80px;
+}
+.why-choose-us__image {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(215deg, #2B3255 0%, rgba(96, 46, 201, 0.00) 100%);
+    backdrop-filter: blur(15px);
+}
+.why-choose-us__title {
+    margin-bottom: 12px;
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+.why-choose-us__text {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+@media (max-width: 991px) {
+    .why-us__body {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .why-us__body {
+        padding-bottom: 100px;
+    }
+    .why-us__container::before {
+        display: none;
+    }
+    .why-us__container::after {
+        display: none;
+    }
+    .why-choose-us__item:not(:last-child) {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 499px) {
+    .why-us__body {
+        padding-bottom: 70px;
+    }
+    .why-choose-us {
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+    .why-choose-us__content:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .why-choose-us__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .why-choose-us__content {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    .why-us__button {
+        width: 100%;
     }
 }
