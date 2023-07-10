@@ -222,6 +222,8 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s ease-in-out;
+    overflow: auto;
+    overflow-y: auto;
 }
 
 .modal {
@@ -231,7 +233,7 @@
 	height: 740px;
     border-radius: 12px;
 	display: none; 
-
+    overflow: auto;
 }
 
 .modal-overlay--visible {
@@ -239,7 +241,7 @@
 	visibility: visible;
 	transition: all 0.3s ease-in-out;
 }
-.modal-overlay--visible
+
 .modal--visible {
 	display: block;
 }
@@ -419,10 +421,10 @@
         line-height: 24px;
     }
     .modal {
-        overflow-y: auto;
         width: 499px;
         height: 100vh;
         border-radius: 0;
+        overflow: auto;
     }
  }
 /* burger */
